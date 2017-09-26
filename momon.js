@@ -29,7 +29,7 @@ function draw_momon(){
 		
 		var pos = canvas_height - (canvas_height / 2) * 0.12 * time_elapsed;
 		
-		canvas_context.font = "12px 'メイリオ'";
+		canvas_context.font = "bold 12px 'ＭＳ Ｐゴシック'";
 		canvas_context.textAlign = 'center';
 		canvas_context.strokeStyle = "rgb(255,128,255)";
 		canvas_context.strokeText("も", canvas_width / 2, pos);
@@ -52,7 +52,7 @@ function draw_momon(){
 		var g = Math.round(0 + 128 * (1.0 - alpha_blend)); // 最終的にピンクに変化させるための細工
 		var b = Math.round(0 + 255 * (1.0 - alpha_blend)); 
 		
-		canvas_context.font = "39px 'メイリオ'";
+		canvas_context.font = "bold 39px 'ＭＳ Ｐゴシック'";
 		canvas_context.textAlign = 'center';
 		canvas_context.strokeStyle = "rgba(255, " + g + ","+ b + ","+ alpha_blend +")";
 		canvas_context.strokeText("ももーん", canvas_width / 2, canvas_height / 2 + time_elapsed * 0.145);
